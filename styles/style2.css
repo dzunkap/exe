@@ -1,0 +1,25 @@
+.ls {
+    padding: 35px 0;
+}
+
+.lo {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wk {
+    padding-top: 80px;
+}
+
+@media (max-width: 700px) {
+    .ls {
+        padding: 25px 0;
+    }
+
+    .wk {
+        padding-top: 55px;
+    }
+}

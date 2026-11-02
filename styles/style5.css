@@ -1,0 +1,168 @@
+.hd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.hi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+
+.hl {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nv {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nl {
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+.nl::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fce38a;
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.nl:hover {
+    color: #fce38a;
+}
+
+.nl:hover::after {
+    opacity: 1;
+}
+
+.hx {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.ha {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+.ha:hover {
+    color: #fce38a;
+}
+
+.mt {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.bg {
+    display: none;
+    position: relative;
+    z-index: 1002;
+    width: 30px;
+    height: 23px;
+}
+
+.bg span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: .25s;
+}
+
+.bg span:nth-child(1) {
+    top: 0;
+}
+
+.bg span:nth-child(2) {
+    top: 10px;
+}
+
+.bg span:nth-child(3) {
+    top: 20px;
+}
+
+@media (max-width: 700px) {
+    .hi {
+        padding: 16px 0;
+    }
+
+    .bg {
+        display: block;
+        order: 3;
+    }
+
+    .hx {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .nv {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 15px;
+        right: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 18px;
+        background: rgba(243,129,129,.97);
+        border-radius: 5px;
+    }
+
+    .nl {
+        padding: 12px 5px;
+    }
+
+    .nl::after {
+        top: auto;
+        bottom: 4px;
+        width: 45px;
+    }
+
+    .mt:checked ~ .nv {
+        display: flex;
+    }
+
+    .mt:checked + .bg span:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .mt:checked + .bg span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mt:checked + .bg span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-45deg);
+    }
+}

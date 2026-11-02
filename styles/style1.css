@@ -1,0 +1,162 @@
+.sh {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.ssu {
+    margin: 0 0 8px;
+    color: #333333;
+    font-family: "Kaushan Script", Georgia, cursive;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.st {
+    margin: 0;
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.st::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 25px auto 0;
+    background: #f38181;
+}
+
+.stx {
+    margin-top: 25px;
+    color: #999999;
+    font-size: 15px;
+}
+
+.stx p {
+    margin: 0;
+}
+
+.sc {
+    background: #95e1d3;
+}
+
+.sa {
+    display: flex;
+}
+
+.sti {
+    flex: 1 1 0;
+    padding: 25px 12px;
+    border-left: 1px solid rgba(255,255,255,.35);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sti:last-child {
+    border-right: 1px solid rgba(255,255,255,.35);
+}
+
+.stn {
+    margin-bottom: 5px;
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.stp {
+    font-size: 12px;
+    color: #fff;
+}
+
+.sv {
+    display: flex;
+    gap: 15px;
+    margin-top: 55px;
+}
+
+.svi {
+    position: relative;
+    width: 33.333%;
+    min-height: 85px;
+    padding: 0 20px 0 75px;
+}
+
+.svx {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.svt {
+    margin: 0 0 8px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.svp {
+    margin: 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+.sd {
+    margin: 35px 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 700px) {
+    .sec {
+        padding: 45px 0;
+    }
+
+    .sh {
+        margin-bottom: 35px;
+    }
+
+    .st {
+        font-size: 24px;
+    }
+
+    .ssu {
+        font-size: 21px;
+    }
+
+    .sa {
+        flex-wrap: wrap;
+    }
+
+    .sti {
+        flex: 1 1 33.333%;
+        padding: 20px 8px;
+    }
+
+    .stn {
+        font-size: 26px;
+    }
+
+    .sv {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 35px;
+    }
+
+    .svi {
+        width: 100%;
+    }
+
+    .sd {
+        margin: 25px 0;
+    }
+}
